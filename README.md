@@ -1,5 +1,9 @@
 # SASS
 
+Resources
+- [http://sass-lang.com/guide](http://sass-lang.com/guide)
+- [https://github.com/gulpjs/gulp](https://github.com/gulpjs/gulp)
+
 ## windows setup 
 
 Install node
@@ -57,15 +61,13 @@ gulp.task('stats', function () {
 		.pipe(gulp.dest('./src'));
 });
 
-// Init
-gulp.task('default', function(){
-	// sass
-	gulp.watch("./dev/sass/**/*.scss", function(event){
-		gulp.run('sass');
-		gulp.run('stats');
-	});
+// A watcher that runs tasks when any specified files are changed
+gulp.task('watch', function() {
+  	gulp.watch('./dev/sass/**/*.scss', ['sass','stats']);
 });
 
+// The default task (called when you run `gulp` from cli)
+gulp.task('default', ['watch','sass','stats']);
 ```
 
 ###### \dev\sass\_variables.scss
