@@ -6,10 +6,9 @@ Resources
 
 ## windows setup 
 
-Install node
-[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+- Install node [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+- Install gulp and gulp-sass
 
-Install gulp and gulp-sass
 ```sh
 mkdir C:\Source\Repos\first-gulp-project
 cd C:\Source\Repos\first-gulp-project
@@ -27,9 +26,9 @@ type nul > gulpfile.js
 type nul > dev\sass\_variables.scss
 type nul > dev\sass\main.scss
 ```
+- Download Initializr (w/ bootstrap) & extract into \src folder. [http://www.initializr.com/](http://www.initializr.com/)
 
-Download Initializr & extract into \prod folder
-[http://www.initializr.com/](http://www.initializr.com/)
+## Starter Files
 
 ###### \gulpfile.js
 
@@ -92,3 +91,4 @@ body {
 cd C:\Source\Repos\first-gulp-project
 gulp
 ```
+- Use `[ctrl + c]` to stop watching for SCSS changes.
