@@ -92,3 +92,6 @@ cd C:\Source\Repos\first-gulp-project
 gulp
 ```
 - Use `[ctrl + c]` to stop watching for SCSS changes.
+
+# todo
+- turn this readme.md into a blog post, then ditch this repo. 
